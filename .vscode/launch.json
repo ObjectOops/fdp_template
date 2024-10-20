@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug - Chrome",
+            "cwd": "app",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "debug", 
+            "args": [
+                "--web-browser-flag", "--no-sandbox", 
+                "--web-browser-flag", "--disable-setuid-sandbox", 
+                "--web-browser-flag", "--disable-gpu", 
+                "--web-browser-flag", "--disable-dev-shm-usage"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+FROM mcr.microsoft.com/devcontainers/python:1-3.12-bullseye
+
+# Flutter SDK installation.
+RUN cd /usr/local && mkdir flutter && cd flutter \
+    && wget 'https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_3.24.3-stable.tar.xz' \
+    && tar xf flutter_linux_3.24.3-stable.tar.xz \
+    && rm flutter_linux_3.24.3-stable.tar.xz
+
+COPY fdc-setup.sh /usr/local/fdc-setup.sh
