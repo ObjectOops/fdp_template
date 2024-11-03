@@ -1,0 +1,19 @@
+{
+	"name": "Flutter + Django",
+	"build": {
+		"dockerfile": "./Dockerfile",
+		"context": "."
+	},
+	// "features": {
+	// },
+	// "forwardPorts": [
+	// ],
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"Dart-Code.flutter"
+			]
+		}
+	},
+	"postCreateCommand": "/usr/local/fdc-setup.sh"
+}

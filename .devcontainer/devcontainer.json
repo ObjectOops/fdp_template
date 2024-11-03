@@ -1,19 +1,15 @@
 {
-	"name": "Flutter and Django",
-	"build": {
-		"dockerfile": "./Dockerfile",
-		"context": "."
-	},
-	// "features": {
-	// },
-	// "forwardPorts": [
-	// ],
+	"name": "Flutter + Django & PostgreSQL",
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "app",
+	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+	// "postCreateCommand": "/tmp/fdp-tmp/fdp-setup.sh",
+	// "forwardPorts": [5000, 5432],
 	"customizations": {
 		"vscode": {
 			"extensions": [
 				"Dart-Code.flutter"
 			]
 		}
-	},
-	"postCreateCommand": "/usr/local/fdc-setup.sh"
+	}
 }
