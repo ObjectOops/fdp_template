@@ -3,7 +3,7 @@
 	"dockerComposeFile": "docker-compose.yml",
 	"service": "app",
 	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
-	// "postCreateCommand": "/tmp/fdp-tmp/fdp-setup.sh",
+	"postCreateCommand": "sh .devcontainer/fdp-setup.sh",
 	// "forwardPorts": [5000, 5432],
 	"customizations": {
 		"vscode": {

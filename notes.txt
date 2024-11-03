@@ -1,6 +1,5 @@
 Update forwarded ports. Second default one is PostgreSQL.
 /usr/local/flutter/flutter/bin/flutter precache
 Precache thing?: 
-post create cmd
 
 Forwarding PostgreSQL thing.

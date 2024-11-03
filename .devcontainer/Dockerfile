@@ -17,5 +17,3 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
 RUN wget "https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_${FLUTTER_VERSION}.tar.xz" \
     && tar -xf "flutter_linux_${FLUTTER_VERSION}.tar.xz" -C /usr/local/ \
     && rm "flutter_linux_${FLUTTER_VERSION}.tar.xz"
-
-# COPY .devcontainer/fdp-setup.sh /tmp/fdp-tmp/
