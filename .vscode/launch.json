@@ -2,17 +2,35 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Debug - Chrome",
-            "cwd": "app",
+            "name": "Flutter Run Debug",
             "request": "launch",
             "type": "dart",
-            "flutterMode": "debug", 
+            "toolArgs": ["--web-port", "3000"]
+        },
+        {
+            "name": "Flutter Run Profile",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile",
+            "toolArgs": ["--web-port", "3000"]
+        },
+        {
+            "name": "Flutter Run Release",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release",
+            "toolArgs": ["--web-port", "3000"]
+        },
+        {
+            "name": "Python Django Debug",
+            "type": "debugpy",
+            "request": "launch",
             "args": [
-                "--web-browser-flag", "--no-sandbox", 
-                "--web-browser-flag", "--disable-setuid-sandbox", 
-                "--web-browser-flag", "--disable-gpu", 
-                "--web-browser-flag", "--disable-dev-shm-usage"
-            ]
+                "runserver"
+            ],
+            "django": true,
+            "autoStartBrowser": false,
+            "program": "${workspaceFolder}/manage.py",
         }
     ]
 }
