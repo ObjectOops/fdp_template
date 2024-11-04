@@ -4,12 +4,13 @@ The devcontainer is compatible with both GitHub Codespaces and a locally running
 
 ## Usage
 1. Create a new repo from this template.
-2. Specify package versions (ignore for default versions):
+> Important: The automated project structure setup will fail if the repo name contains non-alphanumeric characters (aside from underscores).
+3. Specify package versions (ignore for default versions):
     - Specify the desired Flutter version using the `FLUTTER_VERSION` environment variable in `.devcontainer/Dockerfile`.
     - Specify the desired Django version in `requirements.txt`.
     - All other package versions will likely require modifying the base image used by the Dockerfile.
-3. (Optional) If the devcontainer will be run locally, install the [Dart Debug Extension](https://chrome.google.com/webstore/detail/dart-debug-extension/eljbmlghnomdjgdjmbdekegdkbabckhm).
-4. Create a devcontainer either locally or with GitHub Codespaces.
+4. (Optional) If the devcontainer will be run locally, install the [Dart Debug Extension](https://chrome.google.com/webstore/detail/dart-debug-extension/eljbmlghnomdjgdjmbdekegdkbabckhm).
+5. Create a devcontainer either locally or with GitHub Codespaces.
 
 ### Running the App
 > Use the command palette (<kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>P</kbd>) to search and select "Run Task" to see a list of configured tasks.
