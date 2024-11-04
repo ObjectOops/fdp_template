@@ -5,6 +5,7 @@
             "name": "Flutter Run Debug",
             "request": "launch",
             "type": "dart",
+            "deviceId": "web-server",
             "toolArgs": ["--web-port", "3000"]
         },
         {
@@ -12,6 +13,7 @@
             "request": "launch",
             "type": "dart",
             "flutterMode": "profile",
+            "deviceId": "web-server",
             "toolArgs": ["--web-port", "3000"]
         },
         {
@@ -19,6 +21,7 @@
             "request": "launch",
             "type": "dart",
             "flutterMode": "release",
+            "deviceId": "web-server",
             "toolArgs": ["--web-port", "3000"]
         },
         {
